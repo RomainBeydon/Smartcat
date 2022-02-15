@@ -1,0 +1,38 @@
+header{
+	display: flex;
+	justify-content: space-between;
+	background-color: $bleu_clair;
+
+	@media(max-width: $mobile){
+		justify-content: center;
+	}
+
+	.logo{
+		width: 4%;
+
+		@media(max-width: $mobile){
+			width: 13%;
+			padding: 7%;
+		}
+	}
+
+	nav{
+		width: 40%;
+		padding: 3% 0;
+
+		ul{
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+
+		img{
+			padding-top: 10%;
+			width: 2vw;
+		}
+
+		@media(max-width: $mobile){
+			display: none;
+		}
+	}
+}

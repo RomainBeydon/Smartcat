@@ -1,0 +1,62 @@
+%bouton{
+	display: inline-block;
+	text-align: center;
+
+	padding-top: 14px;
+	padding-right: 24px;
+	padding-bottom: 14px;
+	padding-left: 24px;
+
+	border-radius: 40px;
+	border: 2px solid $bleu;
+
+	text-decoration: none;
+	color: $bleu_fonce;
+}
+
+.bleu{
+	@extend %bouton;
+}
+
+.rouge{
+	display: inline-block;
+	text-align: center;
+
+	background-color: #941446;
+	color: white;
+
+	text-decoration: none;
+	font-family: 'Quicksand', sans-serif;
+	
+	padding: 0.5em 1.5em;;
+	border: none;
+	border-radius: 50px;
+	
+	width: fit-content;
+}
+
+.bouton-bleu{
+	display: inline-block;
+	text-align: center;
+
+	background-color: #478bcb;
+	color: white;
+
+	text-decoration: none;
+	font-family: 'Quicksand', sans-serif;
+	
+	padding: 0.5em 5.5em;
+	border: none;
+	border-radius: 50px;
+	
+	width: fit-content;
+}
+
+.nav{
+	color: $bleu_fonce;
+	text-decoration: none;
+
+	&:hover{
+		text-decoration: underline;
+	}
+}

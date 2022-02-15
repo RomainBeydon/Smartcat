@@ -1,0 +1,51 @@
+.module1{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: $bleu_clair;
+    padding-right: 4%;
+    padding-bottom: 3%;
+
+    @media(max-width: $mobile){
+        flex-direction: column;
+        padding-right: 0;  
+        padding-bottom: 7%;      
+    } 
+
+    .txt{
+        padding-bottom: 3%;
+    }
+
+    img{
+        width: 35%;
+
+        @media(max-width: $mobile){
+        width: 86%;
+    }
+    }
+
+    .marque{
+        font-size: 28px;
+        font-weight: 500;
+
+        @media(max-width: $mobile){
+            display: none;
+        }
+    }
+
+    article{
+        padding-left: 4%;
+        
+    @media(max-width: $mobile){    
+        text-align: center;
+        padding-left: 0%;
+    } 
+    }
+
+    svg{
+        overflow:hidden;
+    }
+    
+}

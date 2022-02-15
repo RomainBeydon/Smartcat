@@ -1,0 +1,79 @@
+.bas2{
+    background-color: $bleu_clair_1;
+}
+
+.module6{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: $bleu_clair;
+    padding-bottom: 7%;
+    padding-top: 5%;
+
+    .trouver p{
+        justify-content: center;
+        text-align: center;
+    }
+
+    ul:first-of-type{
+        @media(max-width: $mobile){
+            display: none;
+        } 
+    }
+    
+    H3{
+        @media(max-width: $mobile){
+            width: 64%;
+            text-align: center;
+            padding-bottom: 7%;
+        } 
+    }
+
+    li{
+        display: flex;
+        align-items: center;
+        text-align: left;
+        width: 120%;
+        padding-top: 10%;
+    }
+
+    article{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .amazon{
+        width: 17vw;
+
+        @media(max-width: $mobile){
+            width: 46vw;
+        } 
+    }
+
+    a{
+        padding-top: 3%;
+
+        @media(max-width: $mobile){
+        padding-top: 10%;
+        } 
+    }
+
+    .partenaire{
+        display: flex;
+        flex-direction: row;
+        width: 65%;
+        justify-content: space-around;
+
+        img{
+            width: 3.25vw;
+            padding-right: 5%;
+
+            @media(max-width: $mobile){
+                width: 7.5vw;
+            } 
+        }
+    }
+}   

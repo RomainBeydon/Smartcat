@@ -1,0 +1,82 @@
+// helpers/typo
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap');
+
+%typo{
+	font-family: 'Quicksand', sans-serif;
+}
+
+%para{
+	font-size: 17px;
+}
+
+h1{
+	@extend %typo;
+	font-weight: 300;
+	// font-size: 70px;
+	font-size: 5vW;
+	color: $bleu_fonce;
+	text-transform: uppercase;
+
+	@media(max-width: $mobile){
+		font-size: 8vW;;
+    } 
+}
+
+nav{
+	li{
+		@extend %typo;
+		font-size: 1.2vw;
+	}
+}
+
+h2{
+	@extend %typo;
+	font-weight: 300;
+	font-size: 2vW;
+	color: $bleu_fonce;
+
+	@media(max-width: $mobile){
+		font-size: 5vW;
+    } 
+}
+
+h3{
+	@extend %typo;
+	font-weight: 300;
+	font-size: 5vW;
+	color: $bleu_fonce;
+	text-transform: uppercase;
+
+	@media(max-width: $mobile){
+		font-size: 8vW;;
+    } 
+}
+
+H4{
+	@extend %typo;
+	font-weight: 300;
+	font-size: 4vw;
+	color: $bleu_clair;
+	text-transform: uppercase;
+
+	@media(max-width: $mobile){
+		font-size: 7vW;
+    } 
+}
+
+b{
+	font-weight: 700;
+}
+
+p{
+	@extend %typo;
+	@extend %para;
+	font-weight: 300;
+	font-size: 1vW;
+	color: $bleu_fonce;
+
+	@media(max-width: $mobile){
+		font-size: 3vW;;
+    } 
+}

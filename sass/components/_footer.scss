@@ -1,0 +1,59 @@
+.footer{
+    background-color: $bleu_fonce;
+    padding: 5%;
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+
+    @media(max-width: $mobile){
+        padding: 10%;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }  
+
+    ul{
+        @media(max-width: $mobile){
+            padding-top: 5%;
+            padding-bottom: 5%;
+        }
+    }
+
+    .logo_footer{
+        width: 9vw;
+        height: 6.5vw;
+
+        @media(max-width: $mobile){
+            width: 37vw;
+            height: auto;
+            padding-top: 10%;
+        }
+    }
+
+    .footer_title{
+        font-size: 1.5vW;
+        text-transform: uppercase;
+        font-weight: 300;
+        padding-bottom: 0.75em;
+
+        @media(max-width: $mobile){
+            font-size: 3.5vW;
+            padding-bottom: 0.75em;
+        }   
+    }
+
+    p{
+        color: $bleu_clair;
+        padding-bottom: 2%;
+    }
+
+    .logo_telechargement{
+        width: 33%;
+
+        @media(max-width: $mobile){
+            width: 57%;
+        }
+    }
+}
+

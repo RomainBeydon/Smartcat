@@ -1,0 +1,39 @@
+.module2{
+
+    padding-top: 10%;
+    padding-bottom: 10%;
+
+    ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 90%;
+        margin: auto;
+
+        @media(max-width: $mobile){
+            flex-direction: column;
+        } 
+
+        h2{
+            padding-top: 9%;
+            font-weight: 500;
+        }
+
+        li{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+
+            @media(max-width: $mobile){
+                padding-bottom: 10%;
+            } 
+        }
+
+        svg{
+            width: 25%;
+        }
+    }
+}
